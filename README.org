@@ -2,3 +2,15 @@
 
 You use Emacs, you like [[https://gitorious.org/evil/pages/Home][evil-mode]], but when you type =:tabnew= nothing
 happens. Install this.
+
+** Installation
+
+If you're hooked up to [[http://melpa.milkbox.net/][MELPA]]:
+
+#+BEGIN_EXAMPLE
+M-x package-refresh-contents
+M-x package-install RET evil-tabs
+#+END_EXAMPLE
+
+Alternatively just grab the single =evil-tabs.el= file and
+install that in your preferred way.
