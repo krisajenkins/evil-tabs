@@ -1,4 +1,4 @@
 * Evil Tabs
 
-You use Emacs, you like evil-mode, but when you type =:tabnew= nothing
+You use Emacs, you like [[https://gitorious.org/evil/pages/Home][evil-mode]], but when you type =:tabnew= nothing
 happens. Install this.
