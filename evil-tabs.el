@@ -30,8 +30,6 @@
 (evil-ex-define-cmd "tabc[lose]" 'elscreen-kill)
 (evil-ex-define-cmd "tabn[ew]" 'elscreen-create)
 
-;; TODO :q interception.
-
 (evil-define-key 'normal evil-tabs-mode-map
   "gt" 'elscreen-next
   "gT" 'elscreen-previous)
