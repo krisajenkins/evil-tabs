@@ -12,5 +12,6 @@ M-x package-refresh-contents
 M-x package-install RET evil-tabs
 #+END_EXAMPLE
 
-Alternatively just grab the single =evil-tabs.el= file and
-install that in your preferred way.
+(Alternatively just grab the single =evil-tabs.el= file and install that in your preferred way.)
+
+Then add =(global-evil-tabs-mode t)= to your =.emacs= file, and eval it.
