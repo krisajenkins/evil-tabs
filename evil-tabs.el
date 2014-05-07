@@ -26,9 +26,19 @@
   (elscreen-create)
   (find-file file))
 
+(evil-define-command evil-tab-sensitive-quit (&optional bang)
+  :repeat nil
+  (interactive "<!>")
+  (if (> (length (elscreen-get-screen-list)) 1)
+    (elscreen-kill)
+    (evil-quit bang)))
+
 (evil-ex-define-cmd "tabe[dit]" 'evil-tabs-tabedit)
 (evil-ex-define-cmd "tabc[lose]" 'elscreen-kill)
 (evil-ex-define-cmd "tabn[ew]" 'elscreen-create)
+(evil-ex-define-cmd "tabn[ext]" 'elscreen-next)
+(evil-ex-define-cmd "tabp[rev]" 'elscreen-previous)
+(evil-ex-define-cmd "q[uit]" 'evil-tab-sensitive-quit)
 
 (evil-define-key 'normal evil-tabs-mode-map
   "gt" 'elscreen-next
