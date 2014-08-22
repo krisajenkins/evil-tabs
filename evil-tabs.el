@@ -34,10 +34,17 @@
     (evil-quit bang)))
 
 (evil-ex-define-cmd "tabe[dit]" 'evil-tabs-tabedit)
+(evil-ex-define-cmd "tabclone" 'elscreen-clone)
 (evil-ex-define-cmd "tabc[lose]" 'elscreen-kill)
+(evil-ex-define-cmd "tabd[isplay]" 'elscreen-toggle-display-tab)
+(evil-ex-define-cmd "tabg[oto]" 'elscreen-goto)
+(evil-ex-define-cmd "tabo[nly]" 'elscreen-kill-others)
 (evil-ex-define-cmd "tabnew" 'elscreen-create)
 (evil-ex-define-cmd "tabn[ext]" 'elscreen-next)
 (evil-ex-define-cmd "tabp[rev]" 'elscreen-previous)
+(evil-ex-define-cmd "tabr[ename]" 'elscreen-screen-nickname)
+(evil-ex-define-cmd "tabs[elect]" 'elscreen-select-and-goto)
+(evil-ex-define-cmd "tabw[ith]" 'elscreen-find-and-goto-by-buffer)
 (evil-ex-define-cmd "q[uit]" 'evil-tab-sensitive-quit)
 
 (evil-define-key 'normal evil-tabs-mode-map
