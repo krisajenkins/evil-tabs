@@ -55,7 +55,6 @@
 (evil-ex-define-cmd "tabw[ith]" 'elscreen-find-and-goto-by-buffer)
 (evil-ex-define-cmd "q[uit]" 'evil-tab-sensitive-quit)
 
-
 (evil-define-key 'normal evil-tabs-mode-map
   "gt" 'elscreen-next
   "gT" 'elscreen-previous
