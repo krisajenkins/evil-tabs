@@ -23,8 +23,7 @@
 
 (evil-define-command evil-tabs-tabedit (file)
   (interactive "<f>")
-  (elscreen-create)
-  (find-file file))
+  (elscreen-find-file file))
 
 (evil-define-command evil-tab-sensitive-quit (&optional bang)
   :repeat nil
